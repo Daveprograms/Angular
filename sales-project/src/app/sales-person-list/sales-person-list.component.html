@@ -9,7 +9,12 @@
 </tr>
 </thead>
 <tbody>
-    <tr *ng ></tr>
+    <tr *ngFor ="let tempSalesPerson of salesPersonList" >
+        <td>{{tempSalesPerson.firstname}}</td>
+        <td>{{tempSalesPerson.lastname}}</td>
+        <td>{{tempSalesPerson.email}}</td>
+        <td>{{tempSalesPerson.salesVolume}}</td>
+    </tr>
 </tbody>
 
 
